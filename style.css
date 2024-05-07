@@ -290,6 +290,7 @@ hr {
 
 
 
+
 @media (max-width: 1024px) {
   .project-container {
     grid-template-columns: repeat(2, 1fr); 
