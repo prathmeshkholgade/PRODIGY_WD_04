@@ -1,5 +1,6 @@
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
+const navMenu = document.querySelectorAll(".nav-menu")
 
 let isOpen = false;
 
@@ -20,3 +21,15 @@ let typed = new Typed("#element", {
   strings: ["Frontend Developer", "Backend Developer", "Full Stack Developer"],
   typeSpeed: 100,
 });
+
+document.addEventListener("DOMContentLoaded",()=>{
+  navMenu.addEventListener("click",()=>{
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetSection = document.getElementById(targetId);
+    if (targetSection) {
+      targetSection.scrollIntoView({ behavior: "smooth" });
+      effect;
+    }
+  })
+})
